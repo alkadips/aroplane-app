@@ -1,5 +1,4 @@
 import { FaBasketballBall } from "react-icons/fa";
-
 const Footer=()=>{
     return(
         <div className="flex p-3 justify-between border-t-2 border-gray-300 sticky bottom-0 bg-white shadow-md z-10 p-4">
