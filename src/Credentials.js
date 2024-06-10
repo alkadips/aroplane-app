@@ -22,10 +22,12 @@ function Credentials() {
                 <div className='pb-8 mt-3'>Ids once authenticated will show here</div>
             </div>
             <div className="fixed bottom-4 right-4">
-      <button className="bg-black hover:bg-blue-700 text-white font-bold p-5 rounded-full shadow-lg">
-       <FaPlus/>
-      </button>
-    </div>
+                <button className="bg-black hover:bg-blue-700 text-white font-bold p-5 rounded-full shadow-lg">
+                    <Link to="/uploadDoc">
+                        <FaPlus />
+                    </Link>
+                </button>
+            </div>
         </div>
     );
 }
