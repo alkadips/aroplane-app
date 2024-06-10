@@ -1,5 +1,5 @@
 import { FaBahai } from "react-icons/fa";
-import { FaBasketballBall } from "react-icons/fa";
+import { FaBasketballBall, FaUserEdit} from "react-icons/fa";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Link } from "react-router-dom";
@@ -47,8 +47,8 @@ const Homepage = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex border rounded-full border-gray-400 pl-3 p-5 mt-5 justify-between">
-                <Link to="/credentials" ><FaBasketballBall /></Link>
+            <div className="flex border rounded-full border-gray-400 pl-5 p-5 mt-5 justify-between justify-item-center items-center">
+                <Link to="/credentials" style={{fontSize:'6px'}} ><FaUserEdit  size={30}/>Identify Credentials</Link>
                 <div><FaBasketballBall /></div>
                 <div><FaBasketballBall /></div>
             </div>
