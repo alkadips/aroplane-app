@@ -17,7 +17,7 @@ const Homepage = () => {
                         <div>  <div className="flex justify-center pt-20">
                             <img className="h-20" src='https://clipart-library.com/2023/2018-frequent-flyer.gif' />
                         </div>
-                            <div className="mt-28 pl-20 font-bold">No Upcoming Travel</div>
+                            <div className="mt-10 pl-20 font-bold">No Upcoming Travel</div>
                         </div>
                     </div>
                     <div >
