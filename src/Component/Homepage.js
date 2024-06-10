@@ -3,24 +3,19 @@ import { FaBasketballBall } from "react-icons/fa";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Link } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Homepage = () => {
 
-  
     return (
         <>
-            <div className="flex justify-between justify-items-center items-center p-3 border-b-2 border-gray-300">
-                <div><FaBasketballBall />
-                </div>
-                <div className="font-bold text-xl">Welcome to Digi Yatra</div>
-                <div><FaBahai /></div>
-            </div>
-
-            <div className=" border-8 border-orange-300  m-auto w-[95%] mt-5 rounded-xl  ">
+            <Header />
+            <div className=" border-[20px] border-orange-400  m-auto w-[95%] mt-5 rounded-xl  ">
                 <div className="flex justify-between">
                     <div>
                         <div>  <div className="flex justify-center pt-20">
-                            <img className="h-20" src='https://clipart-library.com/2023/2018-frequent-flyer.gif'/>
+                            <img className="h-20" src='https://clipart-library.com/2023/2018-frequent-flyer.gif' />
                         </div>
                             <div className="mt-28 pl-20 font-bold">No Upcoming Travel</div>
                         </div>
@@ -44,7 +39,7 @@ const Homepage = () => {
                         <div className="flex justify-center font-bold">-</div>
                     </div>
                     <div>
-                        <img src='gif.gif' className="h-16"/>
+                        <img src='gif.gif' className="h-16" />
                     </div>
                     <div>
                         <div className="font-bold">Deparature</div>
@@ -69,34 +64,7 @@ const Homepage = () => {
                 </div>
             </Carousel>
 
-            {/* //footer */}
-            <div className="flex p-3 justify-between border-t-2 border-gray-300">
-                <div>
-                    <div className="text-center flex justify-center"><FaBasketballBall className="h-10 w-10 text-gray-300"/>
-                    </div>
-                    <div className="text-center flex justify-center">Name</div>
-                </div>
-                <div>
-                    <div className="text-center flex justify-center"><FaBasketballBall className="h-10 w-10 text-gray-300"/>
-                    </div>
-                    <div className="text-center flex justify-center">Name</div>
-                </div>    
-                <div>
-                    <div className="text-center flex justify-center ">< FaBasketballBall className="h-10 w-10 text-gray-300"/>
-                    </div>
-                    <div className="text-center flex justify-center">Name</div>
-                </div>  
-                <div>
-                    <div className="text-center flex justify-center"><FaBasketballBall className="h-10 w-10 text-gray-300"/>
-                    </div>
-                    <div className="text-center flex justify-center">Name</div>
-                </div>                
-                <div>
-                    <div className="text-center flex justify-center"><FaBasketballBall className="h-10 w-10 text-gray-300"/>
-                    </div>
-                    <div className="text-center flex justify-center">Name</div>
-                </div>
-            </div>
+            <Footer />
 
         </>
     )
